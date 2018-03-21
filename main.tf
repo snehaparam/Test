@@ -62,6 +62,7 @@
 ### Compute ###
   ### Compute :: App ###
   resource "opc_compute_instance" "instance_1" {
+    count = "${var.count}"
     name                = "instance1"
     label               = "instance1"
     shape               = "oc3"
