@@ -16,17 +16,6 @@
   variable "apiEndpoint" {
       description = "OCI-Classic Compute tenancy REST Endpoint URL"
   }
+  variable "count" {
+  }
 
-### Keys ###
-  variable sshUser {
-    description = "Username - Account for ssh access to the image"
-    default     = "opc"
-  }
-  variable sshPrivateKey {
-    description = "File location of the ssh private key"
-    default     = "./ssh/id_rsa"
-  }
-  variable sshPublicKey {
-    description = "File location of the ssh public key"
-    default     = "./ssh/id_rsa.pub"
-  }
